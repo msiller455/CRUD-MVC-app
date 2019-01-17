@@ -1,0 +1,50 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-image: url('https://i.imgur.com/WSYZzF3.png');
+    background-size: cover;
+    color: white;
+    font-family: 'Sriracha', cursive;
+}
+
+#display {
+    border: solid grey 2px;
+    height: 90vh;
+    width: 60vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+    background-color: rgba(128, 128, 128, 50%)
+}
+
+#display h1 {
+    text-align: center;
+    margin: 0;
+}
+
+
+.guitars {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+}
+
+.guitars a {
+    text-align: center;
+    text-decoration: none;
+    color: white;
+}
+
+.guitars a:hover {
+    color: orange;
+}

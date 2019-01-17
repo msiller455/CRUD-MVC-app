@@ -3,10 +3,12 @@ const app = express();
 
 const Guitars = require('./models/guitars');
 
-
+app.use(express.static('public'))
 
 app.get('/guitars', (req, res) => {
-    res.send(Guitars);
+    res.render('index.ejs', {
+        guitars: Guitars
+    })
 });
 
 

@@ -1,0 +1,12 @@
+<%- include('partials/header.ejs', {
+    title: "Guitar Index"
+}) %>
+    <div id="display">
+        <h1>Guitar Index</h1>
+        <ul class="guitars">
+            <% guitars.forEach((g, index) => { %>
+            <li><a href="/guitars/<%=index%>"><%= g.brand %> <%= g.build %></a></li>
+            <% }) %>
+        </ul>
+    </div>
+<%- include('partials/footer.ejs') %>
