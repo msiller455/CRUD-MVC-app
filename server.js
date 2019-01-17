@@ -3,4 +3,15 @@ const app = express();
 
 const Guitars = require('./models/guitars');
 
-const port = 8000;
+
+
+app.get('/guitars', (req, res) => {
+    res.send(Guitars);
+});
+
+
+app.listen(8000, () => {
+    console.log("Server is listening on port 8000");
+});
+
+module.exports = app;
